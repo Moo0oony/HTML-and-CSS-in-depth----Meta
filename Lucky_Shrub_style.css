@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #cad2c5;
+    /*Palette used https://coolors.co/palette/cad2c5-84a98c-52796f-354f52-2f3e46 */
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+nav {
+    background: #2F3E46;
+    padding: 0 15px;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+.item {
+    padding: 10px;
+}
+
+a {
+    color: #CAD2C5;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #84A98C;
+}
+
+main {
+    background-color: #84A98C;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    margin: 0.3rem;
+    /*background: #2F3E46;*/
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+article a:hover {
+    text-decoration: underline;
+    text-decoration-color: #52796F;
+}
+
+article a>img {
+    float: left;
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.individual-post {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #354F52;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #354F52;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+footer {
+    display: flex;
+    background: #2F3E46;
+    padding: 0 15px;
+}
+
+footer div {
+    width: 50%;
+}
+
+footer div img {
+    width: 2rem;
+    object-fit: cover;
+    margin: 0.5rem;
+}
+
+footer div p {
+    text-align: right;
+    color: #CAD2C5;
+    margin: 2rem;
+}
+
+.section-divider {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background: #2F3E46;
+    margin-left: -10%;
+    margin-top: 1rem;
+}
+
+.thumbnail {
+    top: -50px;
+    left: -35px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
